@@ -15,9 +15,6 @@
 </head>
 
 <body>
-    <!-- <nav>
-        <a href="https://throwx.cn">🐮🐮 Throwable's Blog</a>
-    </nav> -->
     <!-- 定义加载时候的动作 -->
     <div id="app">加载中...</div>
     <script>
@@ -25,31 +22,25 @@
             // 侧边栏标题
             name: 'RabbitMQ中文教程',
             // 右上角github猫头鹰
-            repo: 'https://github.com/langsingwe',
+            // repo: 'https://github.com/langsingwe',
             // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
             loadSidebar: false,
             // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
             loadNavbar: true,
             // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
-            coverpage: false,
+            // coverpage: false,
             // 最大支持渲染的标题层级
             maxLevel: 4,
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
-            subMaxLevel: 2
-        }
-    </script>
-    <script>
-        // 搜索配置
-        window.$docsify = {
+            subMaxLevel: 2,
             search: {
-                maxAge: 86400000,
-                paths: auto,
+                //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+                paths: 'auto',
                 placeholder: '搜索',
                 noData: '找不到结果',
+                // 搜索标题的最大程级, 1 - 6
                 depth: 3,
-                hideOtherSidebarContent: false,
-                namespace: 'RabbitMQ-CN'
-            }
+                },
         }
     </script>
     <!-- docsify的js依赖 -->
